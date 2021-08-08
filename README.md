@@ -1,0 +1,1 @@
+![Square Painting](images/square-painting.png)
