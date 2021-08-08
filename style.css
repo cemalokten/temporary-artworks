@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Lab Mono Web';
+  src: url('fonts/labmono-regular-web.woff2') format('woff2'),
+    url('fonts/labmono-regular-web.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    background-color: rgb(67, 34, 255);
+  box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Lab Mono Web';
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: white;
+;}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+:root {
+    --cols: 10;
+    --rows: 10;
+}
+
+#container {
+display: grid;
+grid-template-columns: repeat(var(--cols), 1fr);
+grid-template-rows: repeat(var(--rows), 1fr);
+width: 100vw;
+height: 100vh;
+justify-items: stretch;
+align-items: stretch;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='number'],
+input[type='email'],
+input[type='url'],
+input[type='password'] {
+  height: 2rem;
+  font-size: 0.9rem;
+  background-color: rgb(248, 248, 248);
+  padding: 5px;
+  border: thin black solid;
+  border-radius: 0.6em;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  display: inline;
+  clear: both;
+}
