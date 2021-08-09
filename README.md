@@ -1,4 +1,4 @@
-### Square Painting 👀
+### Temporary Artworks 👀
 
 Onload the page randomly generates a piece of art consisting of random sized squares/rectangles and random colour fills.
 
@@ -6,7 +6,7 @@ The white border acts a frame for the artwork.
 
 Each one is almost certainly unique.
 
-Enjoy the joy of the ephemeral.
+Enjoy the ephemeral.
 
 ### 📚 What I learnt
 - How to use `<template>` elements along with `.cloneNode(true)`
