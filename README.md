@@ -1,4 +1,4 @@
-### 🎨 NOTHING LASTS FOREVER 👀
+### Square Painting 👀
 
 Onload the page randomly generates a piece of art consisting of random sized squares/rectangles and random colour fills.
 
