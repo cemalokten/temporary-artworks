@@ -122,12 +122,12 @@ let squares = [];
 // WAIT UNTIL DOCUMENT HAS LOADED BEFORE COLLECTING SQUARE ELMEENTS
 
 setTimeout(function() {
-    console.log('run');
-   squares = [...document.getElementsByClassName('square')]
+	console.log('run');
+	squares = [...document.getElementsByClassName('square')]
 },0);
 
 setTimeout(function(){
-       squares.forEach((sq) => {
+    squares.forEach((sq) => {
     sq.style.backgroundColor = randomColour();
 })
 },0)

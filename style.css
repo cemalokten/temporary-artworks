@@ -1,21 +1,9 @@
-@font-face {
-  font-family: 'Lab Mono Web';
-  src: url('fonts/labmono-regular-web.woff2') format('woff2'),
-    url('fonts/labmono-regular-web.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
     background-color: rgb(255, 255, 255);
-   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     overflow: hidden;
-    font-family: 'Lab Mono Web';
-
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
 ;}
 
 *,
@@ -32,18 +20,25 @@ body {
 }
 
 :root {
-    --cols: 10;
-    --rows: 10;
-    --color: black;
-    --background: black;
+  --cols: 10;
+  --rows: 10;
 }
 
 #container {
-display: grid;
-grid-template-columns: repeat(var(--cols), 1fr);
-grid-template-rows: repeat(var(--rows), 1fr);
-width: 100%;
-height: 100%;
-justify-items: stretch;
-align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+  width: 100%;
+  height: 100%;
+  justify-items: stretch;
+  align-items: stretch;
 }
+
+@media (max-width: 600px) {
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 5vw;
+}
+}
+
