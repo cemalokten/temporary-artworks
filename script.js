@@ -1,5 +1,4 @@
-
-
+// COLOUR NAME ARRAY TO PICK FROM
 const colourNames = [
 	'Aqua',
 	'Aquamarine',
@@ -101,8 +100,10 @@ const template = document.getElementById('template--js');
 const templateContent = template.content;
 const root = document.documentElement;
 
-let cols = 100;
-let rows = 65;
+
+// GENERATE GRID BETWEEN 10 - 200
+let cols = randomNumber(10, 200);
+let rows = randomNumber(10, 200);
 let numberOfDivs = (cols * rows)
 
 function setCSSVars(cols, rows){
@@ -117,6 +118,8 @@ for (let i = 0; i < numberOfDivs; i++) {
 }
 
 let squares = [];
+
+// WAIT UNTIL DOCUMENT HAS LOADED BEFORE COLLECTING SQUARE ELMEENTS
 
 setTimeout(function() {
     console.log('run');
